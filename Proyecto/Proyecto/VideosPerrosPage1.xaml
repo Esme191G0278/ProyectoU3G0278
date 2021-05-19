@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.VideosPerrosPage1" Background="#52DAF4">
+
+    <StackLayout>
+        <Label TextColor="LightCoral" HorizontalOptions="CenterAndExpand" FontSize="Large">Lista de videos</Label>
+        <WebView  HeightRequest="300"  x:Name="video1"></WebView>
+        <WebView  HeightRequest="300"  x:Name="video2"></WebView>
+        <WebView  HeightRequest="300"  x:Name="video3"></WebView>
+        <WebView  HeightRequest="300"  x:Name="video4"></WebView>
+        <WebView  HeightRequest="300"  x:Name="video5"></WebView>
+    </StackLayout>
+</ContentPage>

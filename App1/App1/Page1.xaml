@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page1">
+    <StackLayout>
+        <Label TextColor="LightCoral" FontSize="Title" VerticalOptions="FillAndExpand" HorizontalOptions="Center" Padding="45" >Elija una de las categorias</Label>
+        <CollectionView ItemsSource="{Binding }">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout >
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={x:Reference },Path=SeleccionCategoriaCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image HorizontalOptions="Center"  WidthRequest="200" Source="{Binding ., Converter={StaticResource cti}}"></Image>
+                        <Label HorizontalOptions="Center" FontSize="Subtitle"  TextColor="LightCoral" Margin="15" Text="{Binding .}"></Label>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+</ContentPage>

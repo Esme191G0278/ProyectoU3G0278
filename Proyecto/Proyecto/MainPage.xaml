@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.MainPage">
+   
+        <StackLayout>
+        <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+        </StackLayout.GestureRecognizers>
+        <Grid>
+            <Image HorizontalOptions="CenterAndExpand" Source="fondo"></Image>
+            <Label HorizontalOptions="Center" FontSize="60" Margin="10" TextColor="LightCoral" >Bienvenido a</Label>
+            <Label HorizontalOptions="Center"  FontSize="60" Padding="100" TextColor="LightCoral">Patitas</Label>
+            <Label TextColor="LightCoral" FontSize="Medium" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="0,0,0,150">Presione la pantalla para elegir la clasificacion</Label>
+        </Grid>
+       
+    </StackLayout>
+
+    
+</ContentPage>
